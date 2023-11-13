@@ -2,8 +2,6 @@
 
 A  curated list of 2D/3D medical image rigid registration algorithms, articles, software, and resources.
 
-# Articles
-
 ## Table of Contents
 
 - [Reviews](#reviews)
