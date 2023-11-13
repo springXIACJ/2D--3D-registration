@@ -1,31 +1,115 @@
-# 2D--3D-registration
-A  list of  2D/3D medical image rigid registration algorithms, articles, software and resources.
+# Awesome-Medical-Image-Registration [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+A  curated list of 2D/3D medical image rigid registration algorithms, articles, software, and resources.
+
 # Articles
+
+## Table of Contents
+
+- [Reviews](#reviews)
+- [Point-Based Methods](#point-based-methods)
+- [Regression Methods](#regression-methods)
+- [Optimization Methods](#optimization-methods)
+
 ## Reviews
-- **The Impact of Machine Learning on 2D/3D Registration for Image-Guided Interventions: A Systematic Review and Perspective** (Frontiers in Robotics and AI, 2021) Mathias Unberath *, Cong Gao, Yicheng Hu, Max Judish, Russell H Taylor, Mehran Armand
-and Robert Grupp [pdf](https://www.frontiersin.org/articles/10.3389/frobt.2021.716007/full)
-- **A review of 3D/2D registration methods for image-guided interventions** (Medical Image Analysis, 2012)P. Markelj, D. Tomazˇevicˇ, B. Likar, F. Pernuš [pdf](https://www.sciencedirect.com/science/article/pii/S1361841510000368)
-## Point--Based approaches
-- **Towards Fully Automatic X-Ray to CT Registration** (MICCAI,2019) Javier Esteban, Matthias Grimm, Mathias Unberath, Guillaume Zahnd & Nassir Navab [pdf](https://link.springer.com/chapter/10.1007/978-3-030-32226-7_70)
-- **Multiview 2D/3D Rigid Registration via a Point-Of-Interest Network for Tracking and Triangulation** (CVPR, 2019)Haofu Liao1*, Wei-An Lin*, Jiarui Zhang, Jingdan Zhang, Jiebo Luo, S. Kevin Zhou [pdf](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8954218)
 
-- **Automatic Annotation of Hip Anatomy in Fluoroscopy for Robust and Efficient 2D/3D Registration**(International Journal of Computer Assisted Radiology and Surgery, 2020)Robert B. Grupp, Mathias Unberath,Cong Gao, Russell H. Taylor [pdf](https://link.springer.com/article/10.1007/s11548-020-02162-7)
+- `2021/08` | **The Impact of Machine Learning on 2D/3D Registration for Image-Guided Interventions: A Systematic Review and Perspective**  
+Mathias Unberath, Cong Gao, Yicheng Hu, Max Judish, Russell H Taylor, Mehran Armand, and Robert Grupp  
+Frontiers in Robotics and AI, 2021  
+[[arxiv](https://arxiv.org/abs/2108.02238)]
+[[paper](https://www.frontiersin.org/articles/10.3389/frobt.2021.716007/full)]
 
-- **Fully automatic tracking of native glenohumeral kinematics from stereo-radiography**(Computers in Biology and Medicine, 2023) William Burton,Ignacio Rivero Crespo, Thor Andreassen, Moira Pryhoda,Andrew Jensen, Casey Myers, Kevin Shelburne, Scott Banks, Paul Rullkoetter. [pdf](https://www.sciencedirect.com/science/article/pii/S0010482523006546)
+- `2010/04` | **A review of 3D/2D registration methods for image-guided interventions**  
+P. Markelj, D. Tomazˇevicˇ, B. Likar, F. Pernuš  
+Medical Image Analysis (MIA), 2012  
+[[paper](https://www.sciencedirect.com/science/article/pii/S1361841510000368)]
 
-- **Transfer learning from an artificial radiograph-landmark dataset for registration of the anatomic skull model to dual fluoroscopic X-ray images** (Computers in Biology and Medicine, 2021) Chaochao Zhou, Thomas Cha, Yun Peng, Guoan Li*  [pdf](https://pdf.sciencedirectassets.com/271150/1-s2.0-S0010482520X00229/1-s2.0-S0010482521007174/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDqR2Id%2BzhKZmclUh47MFvqEEbrEpMGr5xpTmNBYgV%2FywIhANE6msJ7KeD6KaTdF8iDZeB5CecnPQf4frGui6xtOkfQKrIFCEMQBRoMMDU5MDAzNTQ2ODY1Igwui%2BHnvZ%2BajrbfrysqjwUTN4AUF%2FKOKkDbC0F6cqgV5fh%2FbYB9shdeW4EceiYVwZQt20ElQ5gbjLEJgUSVscPAUmBaguAU79IRVR%2BTOH61kpigIEp5kBH7s61E5nSVLIIEBBC60MRwa3gPPbSc50bMLhf3aUkTQbmt4yZnURBZgVppyv%2FPIbZaWZLd2KKhARku%2Fj9xK6Es6JUWV2mEJMP1m8wWyKmXdUK92%2BnMl1tV38m7fRUinSWQvFEd6lPwiL4Fz2%2B2ZnVzmjkntFdS9utrWTlNKR26dmJhTRgBYydPWz7dCAGamnCyO9em45qgE5nL%2BZv2XTDkwq8B0ApL%2B9%2B00NpUVRhqKI1AYEBoURhKbZm23brqFTgTFx1DGAbwpmFAdca%2FbW%2BRBMzdqS2t8sdAqa6VqEZGbcfEv%2F4wAZhgMLA7HUoN1PgkutMV5rC6%2BcDY8Dv3XbOSnggMzRRET46%2BQ3RUw8J6VEFtJ%2BnZVFi4mmdRu5bwhzr0dqWqDLGCh8%2BD9Q4UPp0yhz%2BCU9v85Soy16%2FmkmH6F1uDoxhJkcyUd%2BuC0pbNptb6ffEXE2QZzrO3SfrIENlJqTvQSv%2BZEFSGQOzmLAZ8JB6rOvsOR9xM2tKjLe492CJUnWHQeedFz8TPBcH7n0IfGnU6Sq%2FLNoxftD1UBZt4KD1C1yP8FAr7q6KTcmkGDnnkPRAP3rgNR1PIzUEAVnwa6CI8pU%2BeF2omRHT0P%2BEXtxm0kY6jSOqUYH2NltiD%2F2KqvqEuLrEQnzwKVKboFHmBpnYcao%2FWxRH9%2FngupkszaNA%2BimM3s6N8kWTvmjO%2FjPPvEabJ2HWQySCM7muD7DbY2VGVQLOHRy1oGxUIx%2BoT4VOH7Yod8jcDQYPPgJbIFW7h0oJzGGp5MN%2Fhx6oGOrABZ8xjyPjyioQkArrVI5EfL7UU8TnBO%2F8xWU7mPaBl%2BzY2qiXw9kMw4yL1SomGtrzuWBBYNbwoWrKu7ts1Qjy3S3jhI%2BakwL1aMLz3SATCDDVUsGDortjrq%2F7dTn5tjuebTuMyJIoqFmru5q35yMgN%2FLdFVAaG7I3%2BmJg6L1HuOy%2Fs4j5o4xGJ0Hze9ktV540CZwaztRJKivI8HVKGVsvtMMQJ57eZs%2F5pBif%2BERUk3Co%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231113T103818Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4PXH3E54%2F20231113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=48cdd1db1bcdd1611355643aa501ce691c3167bab5aa8497d6f23875dea6511b&hash=1a5553ee7bd9c7b5b39e0de841950b8a47d495253b37aeec5e15e41d32832c2e&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0010482521007174&tid=spdf-2033d469-256f-48b8-b4d9-f0f6ded848be&sid=f5861c727e2f444a072b31c-7be4c7d78c97gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=05085a5c52515454545d&rr=82566262bf1e986c&cc=cn)
+## Point-Based Methods
 
-## Regression approaches
-- **Generalizing Spatial Transformers to Projective Geometry with Applications to 2D/3D Registration** (MICCAI, 2020)  Cong Gao(B), Xingtong Liu, Wenhao Gu, Benjamin Killeen, Mehran Armand,
-Russell Taylor, and Mathias Unberath [pdf](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_32)
-- **Deep Iterative 2D/3D Registration** (MICCAI, 2021)Srikrishna Jaganathan, Jian Wang [pdf](https://link.springer.com/chapter/10.1007/978-3-030-87202-1_37)
-- **A CNN Regression Approach for Real-Time 2D/3D Registration**(IEEE Transactions on Medical Imaging , 2016)Shun Miao, Z. Jane Wang, Rui Liao [pdf](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7393571)
+- `2023/09` | **Fully automatic tracking of native glenohumeral kinematics from stereo-radiography**  
+William Burton, Ignacio Rivero Crespo, Thor Andreassen, Moira Pryhoda, Andrew Jensen, Casey Myers, Kevin Shelburne, Scott Banks, and Paul Rullkoetter  
+Computers in Biology and Medicine, 2023  
+[[paper](https://www.sciencedirect.com/science/article/pii/S0010482523006546)]
 
-- **X-Ray to CT Rigid Registration Using Scene Coordinate Regression** (MICCAI, 2023) Pragyan Shrestha1,Chun Xie,Hidehiko Shishido, Yuichi Yoshii,and Itaru Kitahara [pdf](https://link.springer.com/chapter/10.1007/978-3-031-43999-5_74)
+- `2021/08` | **Transfer Learning from an Artificial Radiograph-landmark Dataset for Registration of the Anatomic Skull Model to Dual Fluoroscopic X-ray Images**  
+Chaochao Zhou, Thomas Cha, Yun Peng, and Guoan Li  
+Computers in Biology and Medicine, 2021  
+[[arXiv](https://arxiv.org/abs/2108.06466)]
+[[paper](https://www.sciencedirect.com/science/article/pii/S0010482521007174)]
 
-- **A Patient-Specific Self-supervised Model for Automatic X-Ray/CT Registration**(MICCAI, 2023) Baochang Zhang,Shahrooz Faghihroohi, Mohammad Farid Azampour,Shuting Liu, Reza Ghotbi, Heribert Schunkert, and Nassir Navab. [pdf](https://link.springer.com/chapter/10.1007/978-3-031-43996-4_49)
+- `2019/11` **Automatic Annotation of Hip Anatomy in Fluoroscopy for Robust and Efficient 2D/3D Registration**  
+Robert Grupp, Mathias Unberath, Cong Gao, Rachel Hegeman, Ryan Murphy, Clayton Alexander, Yoshito Otake, Benjamin McArthur, Mehran Armand, and Russell Taylor  
+International Journal of Computer Assisted Radiology and Surgery (IJCARS), 2020  
+[[arXiv](https://arxiv.org/abs/1911.07042)]
+[[paper](https://link.springer.com/article/10.1007/s11548-020-02162-7)]
 
-- **A Fully Differentiable Framework for 2D/3D Registration and the Projective Spatial Transformers**  （IEEE Transactions on Medical Imaging, 2023）Cong Gao, Anqi Feng, Xingtong Liu, Russell H. Taylor [pdf](https://ieeexplore.ieee.org/document/10210439)
-## Optimization approaches
-- **2D/3D registration with the CMA-ES method** (SPIE, 2008) Ren Hui Gong, Purang Abolmaesumi [pdf](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/6918/1/2D3D-registration-with-the-CMA-ES-method/10.1117/12.770331.short?SSO=1) 
-- **A novel approach to 2D/3D registration of X-ray images using Grangeat’s relation** (Medical Image Analysis) Robert Frysch,TimPfeiffer,Georg Rose. [pdf](https://www.sciencedirect.com/science/article/pii/S1361841520301791)
+- `2019/10` | **Towards Fully Automatic X-Ray to CT Registration**  
+Javier Esteban, Matthias Grimm, Mathias Unberath, Guillaume Zahnd, and Nassir Navab  
+Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2019  
+[[paper](https://link.springer.com/chapter/10.1007/978-3-030-32226-7_70)]
+
+- `2019/03` | `Point2` | **Multiview 2D/3D Rigid Registration via a Point-Of-Interest Network for Tracking and Triangulation**  
+Haofu Liao, Wei-An Lin, Jiarui Zhang, Jingdan Zhang, Jiebo Luo, and S. Kevin Zhou  
+Computer Vision and Pattern Recognitio (CVPR), 2019  
+[[arXiv](https://arxiv.org/abs/1903.03896)]
+[[paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Liao_Multiview_2D3D_Rigid_Registration_via_a_Point-Of-Interest_Network_for_Tracking_CVPR_2019_paper.pdf)]
+
+## Regression Methods
+
+- `2023/10` | **A Patient-Specific Self-supervised Model for Automatic X-Ray/CT Registration**  
+Baochang Zhang, Shahrooz Faghihroohi, Mohammad Farid Azampour, Shuting Liu, Reza Ghotbi, Heribert Schunkert, and Nassir Navab  
+Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023  
+[[paper](https://link.springer.com/chapter/10.1007/978-3-031-43996-4_49)]
+[[code](https://github.com/BaochangZhang/PSSS_registration)]
+[reviews]
+
+- `2023/10` | **X-Ray to CT Rigid Registration Using Scene Coordinate Regression**  
+Pragyan Shrestha, Chun Xie, Hidehiko Shishido, Yuichi Yoshii, and Itaru Kitahara  
+Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023  
+[[paper](https://link.springer.com/chapter/10.1007/978-3-031-43999-5_74)]
+[[code](https://github.com/Pragyanstha/SCR-Registration)]
+[reviews]
+
+- `2023/08` | **A Fully Differentiable Framework for 2D/3D Registration and the Projective Spatial Transformers**  
+Cong Gao, Anqi Feng, Xingtong Liu, Russell H. Taylor, Mehran Armand, and Mathias Unberath  
+IEEE Transactions on Medical Imaging (TMI), 2023  
+[[paper](https://ieeexplore.ieee.org/document/10210439)]
+
+- `2021/07` | **Deep Iterative 2D/3D Registration**  
+Srikrishna Jaganathan, Jian Wang, Anja Borsdorf, Karthik Shetty, and Andreas Maier  
+Medical Image Computing and Computer Assisted Intervention (MICCAI), 2021  
+[[arXiv](https://arxiv.org/abs/2107.10004)]
+[[paper](https://link.springer.com/chapter/10.1007/978-3-030-87202-1_37)]
+[[reviews](https://miccai2021.org/openaccess/paperlinks/2021/09/01/130-Paper2357.html)]
+
+- `2020/03` | **Generalizing Spatial Transformers to Projective Geometry with Applications to 2D/3D Registration**  
+Cong Gao, Xingtong Liu, Wenhao Gu, Benjamin Killeen, Mehran Armand, Russell Taylor, and Mathias Unberath  
+Medical Image Computing and Computer Assisted Intervention (MICCAI), 2020  
+[[arXiv](https://arxiv.org/abs/2003.10987)]
+[[paper](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_32)]
+
+- `2016/01` | **A CNN Regression Approach for Real-Time 2D/3D Registration**  
+Shun Miao, Z. Jane Wang, and Rui Liao  
+IEEE Transactions on Medical Imaging (TMI), 2016  
+[[arXiv version](https://arxiv.org/abs/1507.07505)]
+[[paper](https://ieeexplore.ieee.org/document/7393571)]
+
+## Optimization Methods
+
+- `2021/01` | **A novel approach to 2D/3D registration of X-ray images using Grangeat’s relation**  
+Robert Frysch, Tim Pfeiffer, and Georg Rose  
+Medical Image Analysis (MIA), 2021  
+[[paper](https://www.sciencedirect.com/science/article/pii/S1361841520301791)]
+
+- `2008/03` | **2D/3D registration with the CMA-ES method**  
+Ren Hui Gong, and Purang Abolmaesumi  
+Society of Photo-Optical Instrumentation Engineers (SPIE), 2008    
+[[paper](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/6918/1/2D3D-registration-with-the-CMA-ES-method/10.1117/12.770331.short?SSO=1)]
+
+## Others
+
+- `2022/10` | **Self-Supervised 2D/3D Registration for X-Ray to CT Image Fusion**  
+Srikrishna Jaganathan, Maximilian Kukla, Jian Wang, Karthik Shetty, and Andreas Maier  
+Winter Conference on Applications of Computer Vision (WACV), 2023  
+[[arXiv](https://arxiv.org/abs/2210.07611)]
+[[paper](https://openaccess.thecvf.com/content/WACV2023/papers/Jaganathan_Self-Supervised_2D3D_Registration_for_X-Ray_to_CT_Image_Fusion_WACV_2023_paper.pdf)]
