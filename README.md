@@ -85,7 +85,7 @@ Cong Gao, Xingtong Liu, Wenhao Gu, Benjamin Killeen, Mehran Armand, Russell Tayl
 Medical Image Computing and Computer Assisted Intervention (MICCAI), 2020  
 [[arXiv](https://arxiv.org/abs/2003.10987)]
 [[paper](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_32)]
-[[Code](https://github.com/gaocong13/ Projective-Spatial-Transformers)]
+[[Code](https://github.com/gaocong13/Projective-Spatial-Transformers)]
 
 - `2016/01` | **A CNN Regression Approach for Real-Time 2D/3D Registration**  
 Shun Miao, Z. Jane Wang, and Rui Liao  
