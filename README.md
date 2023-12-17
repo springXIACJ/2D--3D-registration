@@ -59,14 +59,14 @@ Baochang Zhang, Shahrooz Faghihroohi, Mohammad Farid Azampour, Shuting Liu, Reza
 Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023  
 [[paper](https://link.springer.com/chapter/10.1007/978-3-031-43996-4_49)]
 [[code](https://github.com/BaochangZhang/PSSS_registration)]
-[reviews]
+[[reviews](https://conferences.miccai.org/2023/papers/021-Paper2349.html)]
 
 - `2023/10` | **X-Ray to CT Rigid Registration Using Scene Coordinate Regression**  
 Pragyan Shrestha, Chun Xie, Hidehiko Shishido, Yuichi Yoshii, and Itaru Kitahara  
 Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023  
 [[paper](https://link.springer.com/chapter/10.1007/978-3-031-43999-5_74)]
 [[code](https://github.com/Pragyanstha/SCR-Registration)]
-[reviews]
+[[reviews](https://conferences.miccai.org/2023/papers/726-Paper3129.html)]
 
 - `2023/08` | **A Fully Differentiable Framework for 2D/3D Registration and the Projective Spatial Transformers**  
 Cong Gao, Anqi Feng, Xingtong Liu, Russell H. Taylor, Mehran Armand, and Mathias Unberath  
